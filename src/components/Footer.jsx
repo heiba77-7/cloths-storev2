@@ -50,7 +50,7 @@ function Footer() {
             <NavLink to="cart">Cart</NavLink>
           </li>
           <li className="list-none w-full text-sm mt-1">
-            <NavLink to="home">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </li>
         </ul>
       </div>

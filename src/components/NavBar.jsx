@@ -25,16 +25,16 @@ function Nav() {
     <div className={`hidden w-4/5 md:3/5 text-xl md:flex `}>
       <ul className="w-4/5 flex h-full">
         <li className="list-none w-1/4 text-center">
-          <NavLink to="men">Men</NavLink>
+          <NavLink to="men" className="hover:text-red-700">Men</NavLink>
         </li>
         <li className="list-none w-1/4 text-center">
-          <NavLink to="kids">Kids</NavLink>
+          <NavLink to="kids"className="hover:text-red-700">Kids</NavLink>
         </li>
         <li className="list-none w-1/4 text-center">
-          <NavLink to="sale">Sale</NavLink>
+          <NavLink to="sale"className="hover:text-red-700">Sale</NavLink>
         </li>
         <li className="list-none w-1/4 text-center">
-          <NavLink to="branches">Branches</NavLink>
+          <NavLink to="branches"className="hover:text-red-700">Branches</NavLink>
         </li>
       </ul>
       <NavLink to="cart" className="w-1/5 text-2xl hidden md:flex justify-center">

@@ -16,3 +16,7 @@
           scrollbar-width: none;  /* Firefox */
     }
   }
+
+  .active{
+    @apply text-red-700 font-semibold
+  }

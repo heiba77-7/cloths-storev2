@@ -10,7 +10,7 @@ function Productview() {
   const dipatch = useDispatch();
   const cartItems = useSelector((state) => state.items);
   const [added, setadded] = useState(
-    cartItems.find((el) => el.name == product.name)
+    false
   );
 
   const { id } = useParams();
@@ -20,11 +20,12 @@ function Productview() {
       const data = await getManProduct(id);
       const [desdata] = data;
       setproduct(desdata);
+      setadded(cartItems.find(el=>desdata.name==el.name))
     }
     getproduct();
+    
   }, []);
 
-  console.log(id);
   return (
     <div className="mt-8 w-4/5 text-center flex flex-wrap">
       <div className="w-full md:h-screen md:w-2/3  relative overflow-hidden">

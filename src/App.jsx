@@ -51,6 +51,9 @@ const router = createBrowserRouter([
       { path: "/order/:name",
        element: <Order />
        },
+       {path:"/*",
+       element:<div className="mt-8 text-xl min-h-[75vh]">Comming Soon</div>
+      }
     ],
   },
 ]);
