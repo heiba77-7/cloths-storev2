@@ -1,6 +1,7 @@
 import React from "react"
 import Products from "../components/Products"
 
+
 function Men() {
 
     return (
@@ -8,7 +9,7 @@ function Men() {
             <header className="w-full text-center text-3xl my-2">
                 Men
             </header>
-           <Products/> 
+           <Products needsort={true}/> 
         </div>
     )
 }
